@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Analisador de Vendas</title>
+    <link rel="stylesheet" href="./src/scss/styles/styles.css">
+</head>
+
+<body>
+    <main class="main">
+        <h1 class="titulo">Numero de vendas</h1>
+
+        <div class="container">
+            <div class="box-1">
+                <div class="box-titulo">Input</div>
+                <textarea id="inputDados" placeholder="Copiar e colar a conversa do Whats"></textarea>
+                <button onclick="processarDados()">Converter</button>
+            </div>
+
+            <div class="box-2">
+                <div class="box-titulo">Output</div>
+                <div id="resultado-consolidado"></div>
+                <div class="baixar-csv">
+                    <input type="text" id="nomeArquivo" placeholder="Digite o nome do arquivo" />
+                    <button onclick="baixarCSV()">Baixar CSV</button>
+                </div>
+            </div>
+            
+            <div id="clientes-container" class="clientes-container">
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./src/script/script.js"></script>
+</body>
+
+</html>
